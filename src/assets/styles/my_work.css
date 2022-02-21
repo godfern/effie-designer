@@ -1,0 +1,58 @@
+.carouselContainer {
+    background-color: #000;
+}
+
+.carousel.carousel-slider {
+    margin: 0 auto;
+}
+
+.carousel.carousel-slider .control-next.control-arrow {
+    right: 0px;
+}
+
+.carousel.carousel-slider .control-prev.control-arrow {
+    left: 0px;
+}
+
+.carouselContainer .carousel .legend {
+    font-size: 14px;
+}
+
+.carousel {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.carousel .thumb {
+    margin: 0 8px;
+    height: 156px;
+}
+
+
+.carousel .control-prev.control-arrow {
+    left: -25px;
+}
+
+.carousel .control-next.control-arrow {
+    right: -25px;
+}
+
+.carousel .control-prev.control-arrow:before {
+    border-right: 25px solid orange;
+}
+
+.carousel .control-next.control-arrow:before {
+    border-left: 25px solid orange;
+}
+
+.carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+    margin: 0 5px;
+    display: inline-block;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    content: '';
+}

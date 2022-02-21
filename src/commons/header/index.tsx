@@ -21,21 +21,23 @@ function Header() {
 
     const location = useLocation();
     console.log(location.pathname);
-    let width = 80;
-    let height = 80;
+    let width = 100;
+    let height = 100;
     let goBack = true;
     let top = "50px";
     let fontSize = '0.9rem';
     let background = "black";
+    let titleColor = "white";
 
     if (location.pathname === "/") {
-        width = 105;
-        height = 105;
+        width = 140;
+        height = 140;
         goBack = false;
         top = "70px";
         fontSize = '1.2rem';
         background = "white";
-        
+        titleColor = "black";
+
     }
 
     return (
@@ -63,26 +65,25 @@ function Header() {
                     </Box>
                 </Toolbar>
             </Container>
-            <Container maxWidth="xl" sx={{ background: background}}>
-                <Toolbar disableGutters sx={{ alignItems: "flex-end"}}>
-                    <Box sx={{ flexGrow: 0, position: "relative", bottom: "40px", marginLeft: "80px"}}>
-                        <IconButton component={Link} to="/" sx={{ p: 0 }}>
-                            <Avatar alt="Effie" src={profile} sx={{ width: width, height: height, border: "5px solid white", boxShadow: 3 }} />
+            <Container maxWidth="xl" sx={{ background: background }}>
+                <Toolbar disableGutters sx={{ alignItems: "flex-end", padding: "0 66px 0 66px" }}>
+                    <Box sx={{ flexGrow: 0, position: "relative", bottom: "40px" }}>
+                        <IconButton component={Link} to="/">
+                            <Avatar alt="Effie" src={profile} sx={{ width: width, height: height, border: "6px solid white", boxShadow: "0px 0px 3px 1px #000;"}} />
                         </IconButton>
-                        <Typography variant="h5" component="div" gutterBottom sx={{ color: "black", fontWeight: 'bold', textTransform: 'uppercase', m: 1, marginLeft:0, fontSize: fontSize}}>Epifanio Fernandes
+                        <Typography variant="h5" component="div" gutterBottom sx={{ color: titleColor, fontWeight: 'bold', textTransform: 'uppercase', m: 1, marginLeft: 0, fontSize: fontSize }}>Epifanio Fernandes
                         </Typography>
-                        <Typography variant="subtitle1" component="div" gutterBottom sx={{ color: "black", fontWeight: 'light', fontSize: fontSize }}>Inspired & Visionay Graphic Designer</Typography>
+                        <Typography variant="subtitle1" component="div" gutterBottom sx={{ color: titleColor, fontWeight: 'light', fontSize: fontSize }}>Inspired & Visionay Graphic Designer</Typography>
                     </Box>
-                    { !goBack && <Box sx={{ color: "black", p: 1, width: '20%', marginLeft: "auto" }} >
-                        <Typography variant="subtitle1" component="div" gutterBottom sx={{ display: { xs: 'flex', md: 'flex'}, alignItems: "center" , fontWeight: 'light', fontSize: '0.9rem'}}><EmailIcon sx={{ marginRight: "5px" }} fontSize="small"/> epifanioferns2@gmail.com</Typography>
-                        <Typography variant="subtitle1" component="div" gutterBottom sx={{fontWeight: 'light', fontSize: '0.9rem' }} ><PhoneInTalkIcon sx={{ marginRight: "5px" }} fontSize="small"/> 074-702-63595</Typography>
-                        <Typography variant="subtitle1" component="div" gutterBottom sx={{ display: { xs: 'flex'}, fontWeight: 'light', fontSize: '0.9rem' }}>
-                            <LocationOnIcon sx={{ marginRight: "5px" }} fontSize="small"/>
-                            <Typography variant="subtitle1" component="div" gutterBottom sx={{ width: '60%' , fontWeight: 'light', fontSize: '0.9rem'}}> 2 Navigation Building, Station Approach, Hayes, Middlesex, UB3 4FF</Typography>
+                    {!goBack && <Box sx={{ color: "black", p: 3, width: '20%', marginLeft: "auto" }} >
+                        <Typography variant="subtitle1" component="div" gutterBottom sx={{ display: { xs: 'flex', md: 'flex' }, alignItems: "center", fontWeight: 'light', fontSize: '0.8rem' }}><EmailIcon sx={{ marginRight: "5px" }} fontSize="small" /> epifanioferns2@gmail.com</Typography>
+                        <Typography variant="subtitle1" component="div" gutterBottom sx={{ fontWeight: 'light', fontSize: '0.8rem' }} ><PhoneInTalkIcon sx={{ marginRight: "5px" }} fontSize="small" /> 074-702-63595</Typography>
+                        <Typography variant="subtitle1" component="div" gutterBottom sx={{ display: { xs: 'flex' }, fontWeight: 'light', fontSize: '0.8rem' }}>
+                            <LocationOnIcon sx={{ marginRight: "5px" }} fontSize="small" />
+                            <Typography variant="subtitle1" component="div" gutterBottom sx={{ width: '60%', fontWeight: 'light', fontSize: '0.8rem' }}> 2 Navigation Building, Station Approach, Hayes, Middlesex, UB3 4FF</Typography>
                         </Typography>
                     </Box>
                     }
-                    
                 </Toolbar>
             </Container>
         </AppBar>
