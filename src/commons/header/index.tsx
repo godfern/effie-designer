@@ -40,14 +40,19 @@ function Header() {
 
     }
 
+    if(location.pathname === "/contact" || location.pathname ===  "/experience"){
+        background = "white";
+        titleColor = "black";
+    }
+
     return (
         <AppBar position="static" sx={{ boxShadow: 0 }}>
             <Container maxWidth="xl" sx={{ borderBottom: "6px solid orange", background: "black" }}>
                 <Toolbar disableGutters sx={{ alignItems: "flex-end" }}>
                     {goBack &&
-                        <Box sx={{ flexGrow: 0, marginLeft: "30px", marginRight: "30px" }}>
+                        <Box sx={{ flexGrow: 0, margin:"6px 30px"}}>
                             <IconButton component={Link} to="/" sx={{ p: 0 }}>
-                                <HomeOutlinedIcon color="primary" />
+                                <HomeOutlinedIcon sx={{color:"orange"}} />
                             </IconButton>
                         </Box>
                     }
@@ -68,7 +73,7 @@ function Header() {
             <Container maxWidth="xl" sx={{ background: background }}>
                 <Toolbar disableGutters sx={{ alignItems: "flex-end", padding: "0 66px 0 66px" }}>
                     <Box sx={{ flexGrow: 0, position: "relative", bottom: "40px" }}>
-                        <IconButton component={Link} to="/">
+                        <IconButton component={Link} to="/" sx={{marginLeft:"20px"}}>
                             <Avatar alt="Effie" src={profile} sx={{ width: width, height: height, border: "6px solid white", boxShadow: "0px 0px 3px 1px #000;"}} />
                         </IconButton>
                         <Typography variant="h5" component="div" gutterBottom sx={{ color: titleColor, fontWeight: 'bold', textTransform: 'uppercase', m: 1, marginLeft: 0, fontSize: fontSize }}>Epifanio Fernandes

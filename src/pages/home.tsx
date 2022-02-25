@@ -6,7 +6,6 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
 import List from '@mui/material/List';
 import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress';
 import ImageList from '@mui/material/ImageList';
@@ -79,8 +78,8 @@ const Home = () => {
           </Box>
         </Grid>
         <Grid xs={9}>
-          <Typography component="div" sx={{ fontSize: 14 }}>
-            <Box sx={{ textAlign: 'left', marginBottom: '15px', fontWeight: 'light' }}>
+          <Typography variant="body1" component="div" sx={{ fontSize: '0.9rem', fontWeight: 'light' }}>
+            <Box sx={{ textAlign: 'left', marginBottom: '15px' }}>
               Creative and innovative graphic designer with 15+ years’ experience
               delivering high quality designs and traditional/digital marketing materials
               in several industries. Adept at creating inspiring designs, illustrations, and
@@ -118,7 +117,7 @@ const Home = () => {
         </Grid>
         <Grid xs={9}>
           <Grid item xs={12} md={6}>
-            <Typography variant="h6" component="div" sx={{ fontWeight: 'bold', fontSize: '1rem' }}>
+            <Typography variant="h6" component="div" sx={{ fontWeight: 'bold', fontSize: '0.9rem' }}>
               AREAS OF EXPERTISE
             </Typography>
             <List>
