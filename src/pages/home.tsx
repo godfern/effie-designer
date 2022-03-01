@@ -71,10 +71,10 @@ const Home = () => {
       <Grid container>
         <Grid xs={3}>
           <Box>
-            <Link href="#" sx={{ marginLeft: '5px' }}><Box component="img" sx={{ height: 24, width: 24 }} alt="instagram" src={facebook} /></Link>
-            <Link href="#" sx={{ marginLeft: '5px' }}><Box component="img" sx={{ height: 24, width: 24 }} alt="instagram" src={linkedIn} /></Link>
-            <Link href="#" sx={{ marginLeft: '5px' }}><Box component="img" sx={{ height: 24, width: 24 }} alt="instagram" src={twitter} /></Link>
-            <Link href="#" sx={{ marginLeft: '5px' }}><Box component="img" sx={{ height: 24, width: 24 }} alt="instagram" src={instagram} /></Link>
+            <Link href="https://www.facebook.com/epifanio.s.fernandes/" sx={{ marginLeft: '5px' }}><Box component="img" sx={{ height: 24, width: 24 }} alt="facebook" src={facebook} /></Link>
+            <Link href="https://www.linkedin.com/in/epifanio-fernandes-31a6859b/" sx={{ marginLeft: '5px' }}><Box component="img" sx={{ height: 24, width: 24 }} alt="linkedIn" src={linkedIn} /></Link>
+            <Link href="https://twitter.com/EpifanioFernan9" sx={{ marginLeft: '5px' }}><Box component="img" sx={{ height: 24, width: 24 }} alt="twitter" src={twitter} /></Link>
+            <Link href="https://www.instagram.com/epifaniofernandes9909/" sx={{ marginLeft: '5px' }}><Box component="img" sx={{ height: 24, width: 24 }} alt="instagram" src={instagram} /></Link>
           </Box>
         </Grid>
         <Grid xs={9}>

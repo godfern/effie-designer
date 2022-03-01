@@ -15,9 +15,11 @@
     "react-responsive-carousel": "^3.2.22",
     "react-router-dom": "^6.2.1",
     "react-scripts": "latest",
+    "source-map-explorer": "^2.5.2",
     "typescript": "latest"
   },
   "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

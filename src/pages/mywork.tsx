@@ -11,7 +11,7 @@ import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
-import watches from '../assets/my_work/watches.jpg';
+import watches from '../assets/my_work/watches.png';
 import camp_ads from '../assets/my_work/camp_ads.jpg';
 import paints from '../assets/my_work/paints.jpg';
 import paint2 from '../assets/my_work/paint2.jpg';
@@ -83,7 +83,7 @@ class MyWork extends Component {
             <div>
               <img src={item.image} />
               <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' }, justifyContent: 'start' }} className="legend">
-                <Typography variant="h5" component="div" sx={{ fontWeight: 'light', fontSize: "14px", textAlign: "left", width: '50%' }} >
+                <Typography variant="h5" component="div" sx={{ fontWeight: 'light', fontSize: "14px", textAlign: "left", width: '100%' }} >
                   {item.title}
                 </Typography>
                 <IconButton sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' }, justifyContent: 'end' }} >

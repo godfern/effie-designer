@@ -57,7 +57,7 @@ const Experience = () => {
           <Divider sx={{ backgroundColor: "orange" }} />
         </Grid>
         <Grid xs={12} className="grid-item">
-          <Typography variant="body1" component="div">2021 - till present does freelancing as a Graphic Designer, Social Media Content web banners, sketches and compositions</Typography>
+          <Typography variant="body1" component="div">2021 - till present does freelancing as a Graphic Designer, Social Media Content, web banners, websites, sketches and compositions</Typography>
         </Grid>
         {expierenceData.map(item => (
           <Grid xs={12} className="grid-item">
