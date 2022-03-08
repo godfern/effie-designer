@@ -78,7 +78,7 @@ function Header() {
                         </IconButton>
                         <Typography variant="h5" component="div" gutterBottom sx={{ color: titleColor, fontWeight: 'bold', textTransform: 'uppercase', m: 1, marginLeft: 0, fontSize: fontSize }}>Epifanio Fernandes
                         </Typography>
-                        <Typography variant="subtitle1" component="div" gutterBottom sx={{ color: titleColor, fontWeight: 'light', fontSize: fontSize }}>Inspired & Visionay Graphic Designer</Typography>
+                        <Typography variant="subtitle1" component="div" gutterBottom sx={{ color: titleColor, fontWeight: 'light', fontSize: fontSize }}>Inspired & Visionary Graphic Designer</Typography>
                     </Box>
                     {!goBack && <Box sx={{ color: "black", p: 3, width: '20%', marginLeft: "auto" }} >
                         <Typography variant="subtitle1" component="div" gutterBottom sx={{ display: { xs: 'flex', md: 'flex' }, alignItems: "center", fontWeight: 'light', fontSize: '0.8rem' }}><EmailIcon sx={{ marginRight: "5px" }} fontSize="small" /> epifanioferns2@gmail.com</Typography>
